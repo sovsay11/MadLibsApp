@@ -18,5 +18,10 @@ namespace MadLibsApp
         {
             InitializeComponent();
         }
+
+        private void BtnGenerateMadlib_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }

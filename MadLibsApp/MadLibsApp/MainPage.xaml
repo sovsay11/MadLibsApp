@@ -4,29 +4,31 @@
              x:Class="MadLibsApp.MainPage">
 
     <ScrollView>
-    <StackLayout BackgroundColor="WhiteSmoke">
-        
+        <StackLayout BackgroundColor="WhiteSmoke">
+
             <Frame BackgroundColor="LightGray">
                 <Label Text="Noah's Madlib App"
                HorizontalTextAlignment="Center"
                FontSize="Title"
                TextColor="Black"/>
             </Frame>
-        
+
+            <!--Food label and entry-->
             <Frame CornerRadius="30"
                    Margin="10"
                    BorderColor="Black">
-            <StackLayout>
-            <Label Text="Food"
+                <StackLayout>
+                    <Label Text="Food"
                    HorizontalTextAlignment="Center"
                    FontSize="Medium"
                    TextColor="Black"/>
-            <Entry x:Name="EntFood"
+                    <Entry x:Name="EntFood"
                    Placeholder="Type word here..."
                HorizontalTextAlignment="Center"/>
-            </StackLayout>
+                </StackLayout>
             </Frame>
 
+            <!--Job label and entry-->
             <Frame CornerRadius="30"
                    Margin="10"
                    BorderColor="Black">
@@ -41,6 +43,7 @@
                 </StackLayout>
             </Frame>
 
+            <!--Adjective label and entry-->
             <Frame CornerRadius="30"
                    Margin="10"
                    BorderColor="Black">
@@ -55,6 +58,7 @@
                 </StackLayout>
             </Frame>
 
+            <!--Phrase label and entry-->
             <Frame CornerRadius="30"
                    Margin="10"
                    BorderColor="Black">
@@ -69,6 +73,7 @@
                 </StackLayout>
             </Frame>
 
+            <!--Animal label and entry-->
             <Frame CornerRadius="30"
                    Margin="10"
                    BorderColor="Black">
@@ -83,6 +88,7 @@
                 </StackLayout>
             </Frame>
 
+            <!--Verb label and entry-->
             <Frame CornerRadius="30"
                    Margin="10"
                    BorderColor="Black">
@@ -97,6 +103,7 @@
                 </StackLayout>
             </Frame>
 
+            <!--Place label and entry-->
             <Frame CornerRadius="30"
                    Margin="10"
                    BorderColor="Black">
@@ -111,6 +118,7 @@
                 </StackLayout>
             </Frame>
 
+            <!--Celebrity label and entry-->
             <Frame CornerRadius="30"
                    Margin="10"
                    BorderColor="Black">
@@ -125,6 +133,7 @@
                 </StackLayout>
             </Frame>
 
+            <!--Something to buy label and entry-->
             <Frame CornerRadius="30"
                    Margin="10"
                    BorderColor="Black">
@@ -139,6 +148,7 @@
                 </StackLayout>
             </Frame>
 
+            <!--Things label and entry-->
             <Frame CornerRadius="30"
                    Margin="10"
                    BorderColor="Black">
@@ -154,18 +164,23 @@
             </Frame>
 
 
-        <Button Text="Generate madlib!"
-                FontSize="Medium"
-                Margin="15"
-                Padding="20"
-                CornerRadius="30"
-                BorderColor="Black"
-                BorderWidth="3"/>
+            <Button x:Name="BtnGenerateMadlib"
+                    Text="Generate madlib!"
+                    FontSize="Medium"
+                    Margin="15"
+                    Padding="20"
+                    CornerRadius="30"
+                    BorderColor="Black"
+                    BorderWidth="3"
+                    Clicked="BtnGenerateMadlib_Clicked"/>
+
+            <!--Madlib goes here-->
             <Frame BorderColor="Black"
                    Margin="10">
-        <Label Text="Nothing here yet!"
-               TextColor="Black"
-               FontSize="Medium"/>
+                <Label x:Name="LblMadlib"
+                       Text="Nothing here yet!"
+                       TextColor="Black"
+                       FontSize="Medium"/>
             </Frame>
         </StackLayout>
     </ScrollView>
