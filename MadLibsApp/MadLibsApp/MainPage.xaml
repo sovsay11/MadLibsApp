@@ -180,7 +180,8 @@
                 <Label x:Name="LblMadlib"
                        Text="Nothing here yet!"
                        TextColor="Black"
-                       FontSize="Medium"/>
+                       FontSize="Medium"
+                       HeightRequest="250"/>
             </Frame>
         </StackLayout>
     </ScrollView>
