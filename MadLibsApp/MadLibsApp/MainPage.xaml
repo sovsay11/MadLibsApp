@@ -163,7 +163,7 @@
                 </StackLayout>
             </Frame>
 
-
+            <!--Button to display madlib story-->
             <Button x:Name="BtnGenerateMadlib"
                     Text="Generate madlib!"
                     FontSize="Medium"
@@ -181,7 +181,7 @@
                        Text="Nothing here yet!"
                        TextColor="Black"
                        FontSize="Medium"
-                       HeightRequest="250"/>
+                       HeightRequest="300"/>
             </Frame>
         </StackLayout>
     </ScrollView>
