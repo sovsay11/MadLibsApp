@@ -3,22 +3,171 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MadLibsApp.MainPage">
 
-    <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
-    </StackLayout>
+    <ScrollView>
+    <StackLayout BackgroundColor="WhiteSmoke">
+        
+            <Frame BackgroundColor="LightGray">
+                <Label Text="Noah's Madlib App"
+               HorizontalTextAlignment="Center"
+               FontSize="Title"
+               TextColor="Black"/>
+            </Frame>
+        
+            <Frame CornerRadius="30"
+                   Margin="10"
+                   BorderColor="Black">
+            <StackLayout>
+            <Label Text="Food"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Medium"
+                   TextColor="Black"/>
+            <Entry x:Name="EntFood"
+                   Placeholder="Type word here..."
+               HorizontalTextAlignment="Center"/>
+            </StackLayout>
+            </Frame>
+
+            <Frame CornerRadius="30"
+                   Margin="10"
+                   BorderColor="Black">
+                <StackLayout>
+                    <Label Text="Profession/Job"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Medium"
+                   TextColor="Black"/>
+                    <Entry x:Name="EntJob"
+                           Placeholder="Type word here..."
+               HorizontalTextAlignment="Center"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame CornerRadius="30"
+                   Margin="10"
+                   BorderColor="Black">
+                <StackLayout>
+                    <Label Text="Adjective"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Medium"
+                   TextColor="Black"/>
+                    <Entry x:Name="EntAdjective"
+                           Placeholder="Type word here..."
+               HorizontalTextAlignment="Center"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame CornerRadius="30"
+                   Margin="10"
+                   BorderColor="Black">
+                <StackLayout>
+                    <Label Text="Phrase/Lyrics/Saying"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Medium"
+                   TextColor="Black"/>
+                    <Entry x:Name="EntPhrase"
+                           Placeholder="Type word here..."
+               HorizontalTextAlignment="Center"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame CornerRadius="30"
+                   Margin="10"
+                   BorderColor="Black">
+                <StackLayout>
+                    <Label Text="Animal"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Medium"
+                   TextColor="Black"/>
+                    <Entry x:Name="EntAnimal"
+                           Placeholder="Type word here..."
+               HorizontalTextAlignment="Center"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame CornerRadius="30"
+                   Margin="10"
+                   BorderColor="Black">
+                <StackLayout>
+                    <Label Text="Verb"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Medium"
+                   TextColor="Black"/>
+                    <Entry x:Name="EntVerb"
+                           Placeholder="Type word here..."
+               HorizontalTextAlignment="Center"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame CornerRadius="30"
+                   Margin="10"
+                   BorderColor="Black">
+                <StackLayout>
+                    <Label Text="Place"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Medium"
+                   TextColor="Black"/>
+                    <Entry x:Name="EntPlace"
+                           Placeholder="Type word here..."
+               HorizontalTextAlignment="Center"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame CornerRadius="30"
+                   Margin="10"
+                   BorderColor="Black">
+                <StackLayout>
+                    <Label Text="Celebrity"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Medium"
+                   TextColor="Black"/>
+                    <Entry x:Name="EntCeleb"
+                           Placeholder="Type word here..."
+               HorizontalTextAlignment="Center"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame CornerRadius="30"
+                   Margin="10"
+                   BorderColor="Black">
+                <StackLayout>
+                    <Label Text="Something you would buy (plural)"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Medium"
+                   TextColor="Black"/>
+                    <Entry x:Name="EntBuy"
+                           Placeholder="Type word here..."
+               HorizontalTextAlignment="Center"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame CornerRadius="30"
+                   Margin="10"
+                   BorderColor="Black">
+                <StackLayout>
+                    <Label Text="Things (plural)"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Medium"
+                   TextColor="Black"/>
+                    <Entry x:Name="EntThings"
+                           Placeholder="Type word here..."
+               HorizontalTextAlignment="Center"/>
+                </StackLayout>
+            </Frame>
+
+
+        <Button Text="Generate madlib!"
+                FontSize="Medium"
+                Margin="15"
+                Padding="20"
+                CornerRadius="30"
+                BorderColor="Black"
+                BorderWidth="3"/>
+            <Frame BorderColor="Black"
+                   Margin="10">
+        <Label Text="Nothing here yet!"
+               TextColor="Black"
+               FontSize="Medium"/>
+            </Frame>
+        </StackLayout>
+    </ScrollView>
 
 </ContentPage>
